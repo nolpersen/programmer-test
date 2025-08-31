@@ -34,8 +34,34 @@ Bangun aplikasi manajemen **Produk** dan **Pesanan** dengan entitas berikut:
 
 1. **Versi & Setup**
    - Laravel 10/11, PHP 8.1+.
+   - **Database:** gunakan **PostgreSQL 14+** sebagai DBMS utama.
    - Gunakan **migrations**, **seeders** (contoh 10 produk, 3 kategori, 3 user role).  
    - Aktifkan **soft deletes** untuk Product.
+
+   **Contoh `.env` PostgreSQL**
+   ```env
+   DB_CONNECTION=pgsql
+   DB_HOST=127.0.0.1
+   DB_PORT=5432
+   DB_DATABASE=crud_test
+   DB_USERNAME=postgres
+   DB_PASSWORD=secret
+   ```
+
+   **Contoh `docker-compose.yml` (opsional)**
+   ```yaml
+   services:
+     postgres:
+       image: postgres:14
+       environment:
+         POSTGRES_DB: crud_test
+         POSTGRES_USER: postgres
+         POSTGRES_PASSWORD: secret
+       ports: ["5432:5432"]
+       volumes: ["pg_data:/var/lib/postgresql/data"]
+   volumes:
+     pg_data:
+   ```
 
 2. **Autentikasi & Otorisasi**
    - Implement **JWT** atau **Laravel Sanctum** (pilih salah satu).  
