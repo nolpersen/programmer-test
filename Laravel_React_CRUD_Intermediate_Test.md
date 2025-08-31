@@ -113,7 +113,7 @@ Bangun aplikasi manajemen **Produk** dan **Pesanan** dengan entitas berikut:
 ## 3) Frontend (React) – Requirements
 
 1. **Stack**
-   - React (Vite atau CRA), React Router.
+   - React Vite, React Router.
    - Data fetching: **React Query** atau **SWR**.
    - HTTP: Axios/fetch.
    - Form: React Hook Form (+ Yup/Zod) untuk validasi.
