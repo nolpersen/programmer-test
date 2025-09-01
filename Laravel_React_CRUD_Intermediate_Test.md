@@ -1,4 +1,4 @@
-# CRUD Intermediate Test – Laravel & React
+# CRUD Intermediate Test – Laravel & React (PostgreSQL)
 
 > **Tujuan:** Menguji kemampuan kandidat membangun _CRUD app_ tingkat menengah end‑to‑end (backend Laravel + frontend React), meliputi desain skema, relasi, API RESTful, autentikasi, otorisasi berbasis peran, validasi, upload file, pencarian & filter, pagination, serta UX dasar di React.
 >
